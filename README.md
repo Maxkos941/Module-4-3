@@ -88,6 +88,7 @@ Finally, you should see a GraphQL playground is showing in the explorer and the 
 For the `subql-starter` project, you can try to query with the following code to get a taste of how it works.
 
 ````graphql
+
 query{
 sumRewards(filter:
 {id:{equalTo:"16jWQMBXZNxfgXJmVL61gMX4uqtc9WTXV3c8DGx6DUKejm7"}}){
