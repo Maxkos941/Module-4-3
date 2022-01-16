@@ -89,14 +89,19 @@ For the `subql-starter` project, you can try to query with the following code to
 
 ````graphql
 {
-  query{
-    starterEntities(first:10){
-      nodes{
-        field1,
-        field2,
-        field3
-      }
-    }
-  }
+query{
+sumRewards(filter:
+{id:{equalTo:"16jWQMBXZNxfgXJmVL61gMX4uqtc9WTXV3c8DGx6DUKejm7"}}){
+nodes{
+blockheight
+id
+totalReward
+stakingRewardsByAccountId{
+nodes{
+balance
+}
+}
+}
+}
 }
 ````
